@@ -20,13 +20,13 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
 //Detecting Keyboard Press
 
 addEventListener("keypress", function(event){
-   makeSound(event.Key);
-   buttonAnimation(event.Key)
+   makeSound(event.key);
+   buttonAnimation(event.key)
 })
 
-function makeSound(Key){
+function makeSound(key){
 
-    switch (Key) {
+    switch (key) {
         case "w":
             var tom1 = new Audio("sounds/tom-1.mp3");
             tom1.play();
